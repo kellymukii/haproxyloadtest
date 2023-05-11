@@ -12,7 +12,7 @@ pipeline {
         stage('Load Test') {
             steps {
                 sh 'mkdir reports'
-                sh '/home/node/artillery/bin/run run /var/lib/jenkins/workspace/artillery-load-test/haproxy2.yml'
+                sh '/usr/bin/tanui/haproxy.yml'
             }
         }
     }
